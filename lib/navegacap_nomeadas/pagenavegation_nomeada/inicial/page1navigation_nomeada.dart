@@ -9,7 +9,7 @@ class Page1NavigationNomeada extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Page1 Navegação nomeada'),
       ),
-      body: Center(
+      body: const Center(
         child: Column(
           children: [Text("page1")],
         ),

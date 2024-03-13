@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:jornada_getx/my_app_getx.dart';
 import 'package:jornada_getx/navegacap_nomeadas/navigation_nomeada.dart';
 import 'package:jornada_getx/navegacap_nomeadas/pagenavegation_nomeada/inicial/page1navigation_nomeada.dart';
+import 'package:jornada_getx/navegacap_nomeadas/pagenavegation_nomeada/rota_nao_encontrada/rota_nao_encontrada_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
+      unknownRoute: GetPage(name: "/404", page: ()=> const PageNaoEncontradaPage()),
       home: const MyAppGetX(),
       getPages: [
         GetPage(
