@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class NavigationNomeada extends StatefulWidget {
   const NavigationNomeada({super.key});
@@ -11,9 +12,20 @@ class _NavigationNomeadaState extends State<NavigationNomeada> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Column(children: [
-        Text("Navegação nomeada")
-      ],),),
+      appBar: AppBar(title: const Text("main Namevação nomeada"),),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+          TextButton(
+                  onPressed: () {
+                    Get.toNamed('/inicial/page1');
+                  },
+                  child: const Text("go to Navigation Nomeada Page1")),],
+          
+
+        ),
+      ),
     );
   }
 }

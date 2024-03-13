@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:jornada_getx/navegacao_comum/await_parans/await_parans.dart';
 import 'package:jornada_getx/navegacao_comum/backnavegation/back_home_page.dart';
-import 'package:jornada_getx/pages/ofall/affallPage.dart';
+import 'package:jornada_getx/navegacao_comum/ofall/affallpage.dart';
 import 'package:jornada_getx/navegacao_comum/pagesExemp/page_one.dart';
 import 'package:jornada_getx/navegacao_comum/pagesExemp/page_two.dart';
 import 'package:jornada_getx/navegacao_comum/sendparans/sendparans.dart';

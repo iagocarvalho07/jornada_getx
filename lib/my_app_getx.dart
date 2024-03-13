@@ -16,6 +16,7 @@ class _MyAppGetXState extends State<MyAppGetX> {
     return Scaffold(
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
                TextButton(
                   onPressed: () {
@@ -26,7 +27,7 @@ class _MyAppGetXState extends State<MyAppGetX> {
                   onPressed: () {
                     Get.to(const NavigationNomeada());
                   },
-                  child: const Text("go to backPage")),
+                  child: const Text("go to NavigationNomeada")),
           ],
         ),
       ),

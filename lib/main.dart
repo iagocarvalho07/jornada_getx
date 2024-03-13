@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:jornada_getx/my_app_getx.dart';
+import 'package:jornada_getx/navegacap_nomeadas/navigation_nomeada.dart';
+import 'package:jornada_getx/navegacap_nomeadas/pagenavegation_nomeada/inicial/page1navigation_nomeada.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +19,12 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const MyAppGetX(),
+      getPages: [
+        GetPage(
+            name: "/navagationnomeada", page: () => const NavigationNomeada()),
+        GetPage(
+            name: "/inicial/page1", page: () => const Page1NavigationNomeada())
+      ],
     );
   }
 }
-
